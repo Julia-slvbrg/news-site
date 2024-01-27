@@ -79,3 +79,77 @@ aside .news-article{
     column-gap: 1%;
     row-gap: 5%;
 }
+@media screen and (max-width: 767px){
+    .content{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }
+    .emphasis .news-article a{
+        display: block;
+        font-size: 1.5em;
+    }
+    .emphasis .news-article img{
+        margin-right: 0;
+    }
+    .news{
+        display: block;
+    }
+    .news .news-article{
+        margin-bottom: 32px;
+    }
+    aside{
+        padding-left: 0;
+    }
+    header div.container{
+        flex-direction: column;
+    }
+    .submenu{
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu > li{
+        clear: both;
+    }
+    .submenu li{
+        display: block;
+        padding: 8px;
+    }
+    .menu-btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+    .menu-btn button{
+        padding: 8px;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .emphasis .news-article a{
+        font-size: 1.5em;
+    }
+    .news{
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+@media screen and (min-width:1024px){
+   .menu-btn{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+} 
